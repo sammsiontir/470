@@ -1,0 +1,97 @@
+0 
+26
++v2k
++vc
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/usr/caen/vcs-2011.03/include
+-Mcmodrun=
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /usr/caen/vcs-2011.03/amd64/lib/libvirsim.so /usr/caen/vcs-2011.03/amd64/lib/liberrorinf.so /usr/caen/vcs-2011.03/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/caen/vcs-2011.03/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mupdate
+-Mvcsaceobjs=
+-cm_xmldb
+-full64
+-gen_obj
+-line
+-o simv
+/usr/caen/vcs-2011.03/amd64/bin/vcs1
+fa1.v
+fa1_test.v
+59
+_LMFILES_=/usr/caen/misc/modules/vcs/2011.03
+XMODIFIERS=@im=none
+XDG_SESSION_COOKIE=bee56f43d6bc4d4ec18e462400000028-1358534390.83574-1210597932
+XAUTHORITY=/var/run/gdm/auth-for-chengfu-JSU4Ak/database
+WINDOWPATH=1
+VMR_MODE_FLAG=64
+VENDOR=unknown
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/caen/vcs-2011.03
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+USERNAME=chengfu
+UNAME=/bin/uname
+TOOL_HOME=/usr/caen/vcs-2011.03/amd64
+SW_VCS=2011.03
+SSH_AUTH_SOCK=/tmp/keyring-A4FnhP/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=3118
+SNPSLMD_LICENSE_FILE=/usr/caen/vcs-2011.03/license.dat:/usr/caen/vcs-2011.03/flexlm//license.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3136,unix/unix:/tmp/.ICE-unix/3136
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+ORBIT_SOCKETDIR=/tmp/orbit-chengfu
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/caen/misc/modules:/afs/umich.edu/class/coe/modules
+MFLAGS=
+MANPAGER=/usr/bin/less -is
+MAKELEVEL=1
+MAKEFLAGS=
+MAILSERVER=mail.umich.edu
+LOADEDMODULES=vcs/2011.03
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+KRB5CCNAME=FILE:/tmp/krb5cc_99397523_FNdrun
+KDE_IS_PRELINKED=1
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTTYPE=x86_64-linux
+HOSTNAME=beyster1620p07.engin.umich.edu
+HOST=beyster1620p07.engin.umich.edu
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/afs/umich.edu/user/c/h/chengfu/.gtkrc-1.2-gnome2
+GROUP=users
+GNOME_KEYRING_SOCKET=/tmp/keyring-A4FnhP/socket
+GNOME_KEYRING_PID=3069
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Yikwmw7iEe,guid=37c3c20541f275e7fe30371900000044
+COLORTERM=gnome-terminal
+0
+2
+1358482701 fa1.v
+1358482158 fa1_test.v
+4
+0 
+1298523545 /usr/caen/vcs-2011.03/amd64/lib/libvirsim.so
+1298523345 /usr/caen/vcs-2011.03/amd64/lib/liberrorinf.so
+1298523150 /usr/caen/vcs-2011.03/amd64/lib/libsnpsmalloc.so

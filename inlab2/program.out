@@ -1,0 +1,59 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Red Hat Enterprise Linux Workstation release 6.3 (Santiago)' 
+  is not supported on 'x86_64' officially, assuming linux compatibility by 
+  default. Set VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+         Version E-2011.03_Full64 -- Fri Jan 18 15:17:22 2013
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+DirectC Release 1.0 Copyright (c) 1991-2011 by Synopsys Inc.
+Parsing design file 'fa1_test.v'
+Parsing design file 'fa1.v'
+Top Level Modules:
+       testbench
+No TimeScale specified
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module testbench
+make[1]: Entering directory `/afs/umich.edu/user/c/h/chengfu/Desktop/470/inlab2/csrc'
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o      /usr/caen/vcs-2011.03/amd64/lib/libvirsim.so /usr/caen/vcs-2011.03/amd64/lib/liberrorinf.so /usr/caen/vcs-2011.03/amd64/lib/libsnpsmalloc.so     /usr/caen/vcs-2011.03/amd64/lib/libvcsnew.so /usr/caen/vcs-2011.03/amd64/lib/libuclinative.so         /usr/caen/vcs-2011.03/amd64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/afs/umich.edu/user/c/h/chengfu/Desktop/470/inlab2/csrc'
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03_Full64; Runtime version E-2011.03_Full64;  Jan 18 15:17 2013
+
+Time:   0 clock:0 A:0 B:0 CIN:0 SUM:0 COUT:0
+Time:   5 clock:1 A:0 B:0 CIN:0 SUM:0 COUT:0
+Time:  10 clock:0 A:0 B:0 CIN:1 SUM:1 COUT:0
+Time:  15 clock:1 A:0 B:0 CIN:1 SUM:1 COUT:0
+Time:  20 clock:0 A:0 B:1 CIN:0 SUM:1 COUT:0
+Time:  25 clock:1 A:0 B:1 CIN:0 SUM:1 COUT:0
+Time:  30 clock:0 A:0 B:1 CIN:1 SUM:0 COUT:1
+Time:  35 clock:1 A:0 B:1 CIN:1 SUM:0 COUT:1
+Time:  40 clock:0 A:1 B:0 CIN:0 SUM:1 COUT:0
+Time:  45 clock:1 A:1 B:0 CIN:0 SUM:1 COUT:0
+Time:  50 clock:0 A:1 B:0 CIN:1 SUM:0 COUT:1
+Time:  55 clock:1 A:1 B:0 CIN:1 SUM:0 COUT:1
+Time:  60 clock:0 A:1 B:1 CIN:0 SUM:0 COUT:1
+Time:  65 clock:1 A:1 B:1 CIN:0 SUM:0 COUT:1
+Time:  70 clock:0 A:1 B:1 CIN:1 SUM:1 COUT:1
+Time:  75 clock:1 A:1 B:1 CIN:1 SUM:1 COUT:1
+Time:  80 clock:0 A:1 B:1 CIN:1 SUM:1 COUT:1
+Time:  85 clock:1 A:1 B:1 CIN:1 SUM:1 COUT:1
+$finish called from file "fa1_test.v", line 85.
+$finish at simulation time                   90
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 90
+CPU Time:      0.010 seconds;       Data structure size:   0.0Mb
+Fri Jan 18 15:17:23 2013
+CPU time: .078 seconds to compile + .033 seconds to elab + .094 seconds to link + .030 seconds in simulation
