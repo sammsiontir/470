@@ -1,0 +1,144 @@
+module ISR(reset, value, clock, result, done);
+  input wire reset;
+  input wire [63:0] value ;
+  input wire clock;
+  output reg [31:0] result;
+  output reg done;
+
+  parameter IDLE   = 3'd0;
+  parameter RESET  = 3'd1;
+  parameter CHECK  = 3'd2;
+  parameter GUESS  = 3'd3;
+  parameter MULT   = 3'd4;
+
+  reg [2:0]   state;
+  reg [2:0]   next_state;
+
+  reg [6:0]   counter;
+  reg [6:0]   next_counter;
+
+  reg [63:0]  in_value;
+  reg [31:0]  guess_value;
+  reg         flag;
+
+  reg         mult_start;
+  reg         mult_reset;
+  wire        mult_done;
+  wire [63:0] mult_product;
+
+  mult #(.TBIT(64)) m1(.clock(clock), 
+                       .reset(mult_reset), 
+                       .mplier({32'b0,guess_value}), 
+                       .mcand({32'b0,guess_value}), 
+                       .start(mult_start), 
+                       .product(mult_product), 
+                       .done(mult_done));
+
+  always@* begin
+    case (state)
+      IDLE: begin
+        next_state   = reset? RESET:IDLE;
+        next_counter = counter;
+        // insde ckt value
+        in_value     = 64'd0;
+        guess_value  = 32'd0;
+        flag         = flag;
+        // multiple ckt
+        mult_start   = 0;
+        mult_reset   = 0;
+        // Output
+        done         = flag? 1:0;
+        result       = guess_value;
+      end
+      RESET: begin
+        next_state   = reset? RESET:CHECK;
+        next_counter = counter;
+        // insde ckt value
+        in_value     = value;
+        guess_value  = 32'd0;
+        flag         = 0;
+        // multiple ckt
+        mult_start   = 0;
+        mult_reset   = 1;
+        // Output
+        done         = 0;
+        result       = 32'd0;
+      end
+      CHECK: begin
+        next_state = reset? RESET:
+                     counter[6]? IDLE:
+                     GUESS;
+        next_counter = counter + 1;
+        // insde ckt value
+        in_value     = in_value;
+        guess_value[31-counter]  = (mult_product > in_value)? 0:1;
+        flag         = 1;
+        // multiple ckt
+        mult_start   = 0;
+        mult_reset   = 1;
+        // Output
+        done         = 0;
+        result       = 32'd0;
+      end
+      GUESS: begin
+        next_state = reset? RESET:
+                     mult_done? GUESS:
+                     MULT;
+        next_counter = counter;
+        // insde ckt value
+        in_value     = in_value;
+        guess_value[31-counter]  = 1;
+        flag         = 1;
+        // multiple ckt
+        mult_start   = 0;
+        mult_reset   = 0;
+        // Output
+        done         = 0;
+        result       = 32'd0;
+      end
+      MULT: begin
+        next_state = reset? RESET:
+                     mult_done? CHECK:
+                     MULT;
+        next_counter = counter;
+        // insde ckt value
+        in_value     = in_value;
+        guess_value  = guess_value;
+        flag         = 1;
+        // multiple ckt
+        mult_start   = 1;
+        mult_reset   = 0;
+        // Output
+        done         = 0;
+        result       = 32'd0;
+      end
+      default: begin
+        next_state = IDLE;
+        next_counter = counter;
+        next_state   = reset? RESET:IDLE;
+        // insde ckt value
+        in_value     = 64'd0;
+        guess_value  = 32'd0;
+        flag         = 0;
+        // multiple ckt
+        mult_start   = 0;
+        mult_reset   = 0;
+        // Output
+        done         = 0;
+        result       = 32'd0;
+      end
+  end
+
+  always@ (posedge clock) begin
+    if (reset) begin
+      state   <= RESET;
+      counter <= 7'd0;
+    end
+    else
+      stste   <= next_state;
+      counter <= next_counter;
+    end
+  end 
+  
+endmodule
+

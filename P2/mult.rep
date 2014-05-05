@@ -1,0 +1,260 @@
+Warning: Design 'mult' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : design
+Design : mult
+Version: G-2012.06
+Date   : Fri Feb  8 13:59:47 2013
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    No libraries used.
+
+Local Link Library:
+
+    {lec25dscc25_TT.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : nom_pvt
+    Library : lec25dscc25_TT
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   2.50
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   tsmcwire
+Location       :   lec25dscc25_TT
+Resistance     :   0.2642
+Capacitance    :   0.000132782
+Area           :   0.27
+Slope          :   0.74
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.89
+     2     1.48
+     3     2.44
+     4     3.18
+     5     3.92
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Warning: Design 'mult' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : mult
+Version: G-2012.06
+Date   : Fri Feb  8 13:59:47 2013
+****************************************
+
+Library(s) Used:
+
+    No libraries used.
+
+Number of ports:                          196
+Number of nets:                          1548
+Number of cells:                            1
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:          0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:     383.556067  
+
+Total cell area:             0.000000
+Total area:                383.556067
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+Warning: Design 'mult' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 2
+        -transition_time
+Design : mult
+Version: G-2012.06
+Date   : Fri Feb  8 13:59:47 2013
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: nom_pvt   Library: lec25dscc25_TT
+Wire Load Model Mode: top
+
+  Startpoint: mstage/done[7] (internal pin)
+  Endpoint: done (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               tsmcwire              lec25dscc25_TT
+
+  Point                        Fanout     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  mstage/done[7] (mult_stage)              0.00      0.00       0.00 r
+  done (net)                     1                   0.00       0.00 r
+  done (out)                               0.00      0.01       0.01 r
+  data arrival time                                             0.01
+
+  max_delay                                         10.00      10.00
+  clock uncertainty                                 -0.10       9.90
+  output external delay                             -0.10       9.80
+  data required time                                            9.80
+  ---------------------------------------------------------------------
+  data required time                                            9.80
+  data arrival time                                            -0.01
+  ---------------------------------------------------------------------
+  slack (MET)                                                   9.79
+
+
+  Startpoint: mstage/product_out[448] (internal pin)
+  Endpoint: product[0] (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               tsmcwire              lec25dscc25_TT
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  mstage/product_out[448] (mult_stage)                    0.00      0.00       0.00 r
+  product[0] (net)                              1                   0.00       0.00 r
+  product[0] (out)                                        0.00      0.01       0.01 r
+  data arrival time                                                            0.01
+
+  max_delay                                                        10.00      10.00
+  clock uncertainty                                                -0.10       9.90
+  output external delay                                            -0.10       9.80
+  data required time                                                           9.80
+  ------------------------------------------------------------------------------------
+  data required time                                                           9.80
+  data arrival time                                                           -0.01
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  9.79
+
+
+1
+Warning: Design 'mult' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -verbose
+        -max_delay
+Design : mult
+Version: G-2012.06
+Date   : Fri Feb  8 13:59:47 2013
+****************************************
+
+
+  Startpoint: mstage/done[7] (internal pin)
+  Endpoint: done (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               tsmcwire              lec25dscc25_TT
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  mstage/done[7] (mult_stage)              0.00       0.00 r
+  done (out)                               0.01       0.01 r
+  data arrival time                                   0.01
+
+  max_delay                               10.00      10.00
+  clock uncertainty                       -0.10       9.90
+  output external delay                   -0.10       9.80
+  data required time                                  9.80
+  -----------------------------------------------------------
+  data required time                                  9.80
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         9.79
+
+
+1
+Information: Building the design 'mult_stage'. (HDL-193)
+Warning: Cannot find the design 'mult_stage' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'mult_stage' in 'mult'. (LINK-5)
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : reference
+Design : mult
+Version: G-2012.06
+Date   : Fri Feb  8 13:59:47 2013
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+mult_stage                        0.000000       1      0.000000  b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.000000
+1
