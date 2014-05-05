@@ -1,0 +1,20 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03_Full64; Runtime version E-2011.03_Full64;  Jan 18 15:16 2013
+Time:   0 req:0000 en:1 gnt:0000
+Time:   5 req:1000 en:1 gnt:1000
+Time:  10 req:0100 en:1 gnt:0100
+Time:  15 req:0010 en:1 gnt:0010
+Time:  20 req:0001 en:1 gnt:0001
+Time:  25 req:0101 en:1 gnt:0100
+Time:  30 req:0110 en:1 gnt:0100
+Time:  35 req:1110 en:1 gnt:1000
+Time:  40 req:1111 en:1 gnt:1000
+Time:  45 req:1111 en:0 gnt:0000
+Time:  50 req:0110 en:0 gnt:0000
+$finish called from file "test.v", line 54.
+$finish at simulation time                   55
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 55
+CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
+Fri Jan 18 15:16:12 2013
