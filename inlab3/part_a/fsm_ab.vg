@@ -1,0 +1,20 @@
+
+module fsm_ab ( clock, reset, in, out, state_out );
+  output [1:0] state_out;
+  input clock, reset, in;
+  output out;
+  wire   \next_state[0] , N17, n2, n3, n4, n5, n6, n7;
+  assign \next_state[0]  = in;
+
+  nnd2s2 U4 ( .DIN1(\next_state[0] ), .DIN2(n4), .Q(n5) );
+  oai33s1 U6 ( .DIN1(n3), .DIN2(reset), .DIN3(\next_state[0] ), .DIN4(n5), 
+        .DIN5(state_out[0]), .DIN6(n2), .Q(N17) );
+  dffcs1 \state_reg[0]  ( .CLRB(n6), .DIN(n4), .CLK(clock), .Q(state_out[0]), 
+        .QN(n3) );
+  dffs2 \state_reg[1]  ( .DIN(n7), .CLK(clock), .Q(state_out[1]), .QN(n2) );
+  nb1s1 U7 ( .DIN(\next_state[0] ), .Q(n6) );
+  hi1s1 U8 ( .DIN(reset), .Q(n4) );
+  nb1s1 U9 ( .DIN(N17), .Q(n7) );
+  nor2s1 U10 ( .DIN1(n3), .DIN2(n2), .Q(out) );
+endmodule
+
