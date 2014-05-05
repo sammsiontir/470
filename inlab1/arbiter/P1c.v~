@@ -1,0 +1,31 @@
+module ps2(req, en, gnt, req_up);
+  input [1:0] req;
+  input en;
+  output [1:0] gnt;
+  output req_up;
+
+  reg [1:0] gnt;
+
+  always @*
+  begin
+    if (en & req[1]) gnt = 2'b10;
+    else if (en & req[0]) gnt = 2'b01;
+    else gnt = 4'b00;
+    req_up = req[0] | req[1];
+  end
+endmodule
+
+module ps4(req, en, gnt, req_up);
+  input [3:0] req;
+  input en;
+  output [3:0] gnt;
+  output req_up;
+
+  ps2 left(.req(req[3:2]), .en(), .gnt(gnt[3:2]), .req_up() );
+  ps2 right(.req(req[1:0]), .en(), .gnt(gnt[1:0]), .req_up() );
+  ps2 top(.req(req[1:0]), .en(en), .gnt(gnt[1:0]), .req_up(req_up) );
+
+endmodule
+
+
+
