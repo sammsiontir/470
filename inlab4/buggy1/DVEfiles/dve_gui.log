@@ -1,0 +1,36 @@
+
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03_Full64; Runtime version E-2011.03_Full64;  Feb  1 01:16 2013
+VCD+ Writer E-2011.03_Full64 Copyright (c) 1991-2011 by Synopsys Inc.
+The file '/afs/umich.edu/user/c/h/chengfu/Desktop/470/inlab4/buggy1/inter.vpd' was opened successfully.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.190 seconds;       Data structure size:   3.9Mb
+Fri Feb  1 01:16:19 2013
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03_Full64; Runtime version E-2011.03_Full64;  Feb  1 01:16 2013
+VCD+ Writer E-2011.03_Full64 Copyright (c) 1991-2011 by Synopsys Inc.
+The file '/afs/umich.edu/user/c/h/chengfu/Desktop/470/inlab4/buggy1/inter.vpd' was opened successfully.
+isr_test.v, 2 : module testbench;
+STARTING TESTBENCH!
+ 
+reset=x value=                   x result:         x ans:         x
+smallest number test
+reset=0 value=                   9 result:         x ans:         3
+reset=1 value=                   9 result:         x ans:         3
+reset=1 value=                   9 result:         0 ans:         3
+reset=0 value=                   9 result:         0 ans:         3
+reset=0 value=                   9 result:         3 ans:         3
+reset=0 value=                   9 result:         0 ans:         3
+@@@ Incorrect at time 1310
+@@@ Time:1310 clock:1 value=                   9  result:         0 ans:         3
+ENDING TESTBENCH : ERROR !
+$finish called from file "isr_test.v", line 29.
+$finish at simulation time                 1310
+Simulation complete, time is 1310.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1310
+CPU Time:      0.310 seconds;       Data structure size:   4.0Mb
+Fri Feb  1 01:16:25 2013
