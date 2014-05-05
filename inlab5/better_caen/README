@@ -1,0 +1,15 @@
+If you would like to replace cshsh with bash under CAEN Linux, you'll want to
+update two files. You need to replace the CAEN .cshrc with the one provided
+here and you'll want a starter .bashrc.
+
+NOTE: Both of the files in this directory are missing the leading "." so you
+can see them with 'ls'. For these files to be used, they need the leading "."
+
+("dotfiles" are also called "hidden files" and can be seen with 'ls -a')
+
+Thus when you replace these files, you should execute something like:
+
+mv bashrc /path/to/your/home/directory/.bashrc
+
+
+As always, be careful messing with login scripts as you can break things.

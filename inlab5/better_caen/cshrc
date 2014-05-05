@@ -1,0 +1,26 @@
+#!/bin/csh
+
+###############################################################################
+# The next section sources a system-wide setup file.
+# Removing this line will give you a non-standard environment.
+###############################################################################
+
+source /usr/caen/skel/sys.cshrc
+
+###############################################################################
+# ADD YOUR OWN CUSTOMIZATIONS AFTER THIS COMMENT
+###############################################################################
+
+if ($?prompt && ( -x /bin/bash )) then
+	if (! $?comm) then
+		set comm = `/bin/ps -fp $$ | tail -1 | awk '{ print $8 }'`
+	endif
+	if ( "$comm" == "-csh") then
+		if ( -x "$HOME/.login" ) then
+			source "$HOME/.login"
+		endif
+		exec /bin/bash
+	else
+		exec /bin/bash
+	endif
+endif
