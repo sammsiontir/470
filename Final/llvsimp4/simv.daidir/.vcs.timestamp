@@ -1,0 +1,163 @@
+0 
+54
++v2k
++vc
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/usr/caen/vcs-2011.03/include
+-Mcmodrun=
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=testbench/pipe_print.c
+-Mldflags=
+-Mobjects= /usr/caen/vcs-2011.03/amd64/lib/libvirsim.so /usr/caen/vcs-2011.03/amd64/lib/liberrorinf.so /usr/caen/vcs-2011.03/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/caen/vcs-2011.03/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mupdate
+-Mvcsaceobjs=
+-cm_xmldb
+-full64
+-gen_obj
+-line
+-o simv
+/usr/caen/vcs-2011.03/amd64/bin/vcs1
+sys_defs.vh
+testbench/mem.v
+testbench/testbench.v
+verilog/BPredictor.v
+verilog/BTB.v
+verilog/D_stage.v
+verilog/Dirp.v
+verilog/I_stage.v
+verilog/RAS.v
+verilog/X_C_Buffer.v
+verilog/X_stage.v
+verilog/alu.v
+verilog/archMap.v
+verilog/branch_recovery_controller.v
+verilog/cache/dcachemem.v
+verilog/dcache_controller_simpler.v
+verilog/eight_stage_mult.v
+verilog/freeList.v
+verilog/icache_controller.v
+verilog/icachemem.v
+verilog/id.v
+verilog/if_FB.v
+verilog/mapTable.v
+verilog/pipeline.v
+verilog/pre_decoder.v
+verilog/regfile.v
+verilog/rob.v
+verilog/rs.v
+verilog/selector.v
+verilog/simLSQ.v
+67
+_LMFILES_=/usr/caen/misc/modules/vcs/2011.03
+XMODIFIERS=@im=none
+XDG_SESSION_COOKIE=1ca1f6034a23564c793dd41900000026-1366664362.871467-1839793238
+XAUTHORITY=/var/run/gdm/auth-for-chengfu-w83dDg/database
+WINDOWPATH=1
+VMR_MODE_FLAG=64
+VENDOR=unknown
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/caen/vcs-2011.03
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+USERNAME=chengfu
+UNAME=/bin/uname
+TOOL_HOME=/usr/caen/vcs-2011.03/amd64
+SW_VCS=2011.03
+SSH_AUTH_SOCK=/tmp/keyring-u0AY81/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=3141
+SNPSLMD_LICENSE_FILE=/usr/caen/vcs-2011.03/license.dat:/usr/caen/vcs-2011.03/flexlm//license.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3159,unix/unix:/tmp/.ICE-unix/3159
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RESET_NET_NAME=reset
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PIPELINE_NAME=pipeline
+PIPEFILES=verilog/alu.v verilog/archMap.v verilog/BPredictor.v verilog/branch_recovery_controller.v verilog/BTB.v verilog/dcache_controller_simpler.v verilog/Dirp.v verilog/D_stage.v verilog/eight_stage_mult.v verilog/freeList.v verilog/icache_controller.v verilog/icachemem.v verilog/id.v verilog/if_FB.v verilog/I_stage.v verilog/mapTable.v verilog/pipeline.v verilog/pre_decoder.v verilog/RAS.v verilog/regfile.v verilog/rob.v verilog/rs.v verilog/selector.v verilog/simLSQ.v verilog/X_C_Buffer.v verilog/X_stage.v
+OVA_UUM=0
+OSTYPE=linux
+ORBIT_SOCKETDIR=/tmp/orbit-chengfu
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/caen/misc/modules:/afs/umich.edu/class/coe/modules
+MFLAGS=
+MANPAGER=/usr/bin/less -is
+MAKELEVEL=1
+MAKEFLAGS=
+MAILSERVER=mail.umich.edu
+LOADEDMODULES=vcs/2011.03
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+KRB5CCNAME=FILE:/tmp/krb5cc_99397523_KCcDsR
+KDE_IS_PRELINKED=1
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTTYPE=x86_64-linux
+HOSTNAME=dc3eap09.dc.umich.edu
+HOST=dc3eap09.dc.umich.edu
+HEADERS=sys_defs.vh
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/afs/umich.edu/user/c/h/chengfu/.gtkrc-1.2-gnome2
+GROUP=users
+GNOME_KEYRING_SOCKET=/tmp/keyring-u0AY81/socket
+GNOME_KEYRING_PID=3087
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-iyKYOF3dEP,guid=cd74edc16484735db36c43d500000072
+COLORTERM=gnome-terminal
+CLOCK_PERIOD=50	
+CLOCK_NET_NAME=clock
+CACHE_NAME=cache
+CACHEFILES=verilog/cache/dcachemem.v
+0
+30
+1366667959 testbench/testbench.v
+1297290965 testbench/mem.v
+1366496699 verilog/cache/dcachemem.v
+1366493942 verilog/X_stage.v
+1366492578 verilog/X_C_Buffer.v
+1366498820 verilog/simLSQ.v
+1363994651 verilog/selector.v
+1366016906 verilog/rs.v
+1366487305 verilog/rob.v
+1363988260 verilog/regfile.v
+1366381277 verilog/RAS.v
+1366380014 verilog/pre_decoder.v
+1366498318 verilog/pipeline.v
+1366356130 verilog/mapTable.v
+1366259464 verilog/I_stage.v
+1366381709 verilog/if_FB.v
+1366023298 verilog/id.v
+1366383556 verilog/icachemem.v
+1366383556 verilog/icache_controller.v
+1366159347 verilog/freeList.v
+1366421348 verilog/eight_stage_mult.v
+1366487346 verilog/D_stage.v
+1366424751 verilog/Dirp.v
+1366383556 verilog/dcache_controller_simpler.v
+1366166294 verilog/BTB.v
+1366215248 verilog/branch_recovery_controller.v
+1366381238 verilog/BPredictor.v
+1366372035 verilog/archMap.v
+1366505549 verilog/alu.v
+1366067075 sys_defs.vh
+5
+1297290965 testbench/pipe_print.c
+0 
+1298523545 /usr/caen/vcs-2011.03/amd64/lib/libvirsim.so
+1298523345 /usr/caen/vcs-2011.03/amd64/lib/liberrorinf.so
+1298523150 /usr/caen/vcs-2011.03/amd64/lib/libsnpsmalloc.so
+1366667994 simv.daidir
